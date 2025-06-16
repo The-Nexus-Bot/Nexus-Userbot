@@ -1,0 +1,40 @@
+modules = ["python-3.11"]
+
+[nix]
+channel = "stable-24_05"
+packages = ["cargo", "libiconv", "libxcrypt", "openssl", "pkg-config", "rustc", "imagemagick"]
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Nexus Userbot"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "nexus_userbot_test"
+
+[[workflows.workflow]]
+name = "Nexus Userbot"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "pip install pyrogram tgcrypto python-dotenv aiohttp psutil cryptography requests python-dateutil && python main.py"
+
+[[workflows.workflow]]
+name = "nexus_userbot_test"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "pip install telethon python-dotenv aiohttp psutil requests python-dateutil && python main.py"
+
+[deployment]
+run = ["sh", "-c", "pip install pyrogram tgcrypto python-dotenv aiohttp psutil cryptography requests python-dateutil && python main.py"]

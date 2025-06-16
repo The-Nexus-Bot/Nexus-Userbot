@@ -1,0 +1,246 @@
+2025-06-16 09:17:11,682 - config - INFO - Configuration loaded successfully
+2025-06-16 09:17:11,682 - config - ERROR - Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+2025-06-16 09:17:11,682 - __main__ - ERROR - Fatal error: Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+2025-06-16 09:17:11,684 - config - INFO - Configuration loaded successfully
+2025-06-16 09:17:11,684 - config - ERROR - Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+2025-06-16 09:17:11,684 - __main__ - ERROR - Fatal error: Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+2025-06-16 09:48:54,056 - config - INFO - Configuration loaded successfully
+2025-06-16 09:48:54,056 - config - ERROR - Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+2025-06-16 09:48:54,057 - __main__ - ERROR - Fatal error: Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+2025-06-16 09:48:54,058 - config - INFO - Configuration loaded successfully
+2025-06-16 09:48:54,058 - config - ERROR - Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+2025-06-16 09:48:54,058 - __main__ - ERROR - Fatal error: Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+2025-06-16 09:58:34,181 - config - INFO - Configuration loaded successfully
+2025-06-16 09:58:34,181 - config - ERROR - Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+2025-06-16 09:58:34,181 - __main__ - ERROR - Fatal error: Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+2025-06-16 09:58:34,594 - config - INFO - Configuration loaded successfully
+2025-06-16 09:58:34,594 - config - ERROR - Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+2025-06-16 09:58:34,594 - __main__ - ERROR - Fatal error: Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+2025-06-16 10:16:18,819 - config - INFO - Configuration loaded successfully
+2025-06-16 10:16:18,820 - config - ERROR - Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+2025-06-16 10:16:18,820 - __main__ - ERROR - Fatal error: Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+2025-06-16 10:16:19,087 - config - INFO - Configuration loaded successfully
+2025-06-16 10:16:19,088 - config - ERROR - Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+2025-06-16 10:16:19,088 - __main__ - ERROR - Fatal error: Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+2025-06-16 10:32:01,324 - config - INFO - Configuration loaded successfully
+2025-06-16 10:32:01,325 - config - ERROR - Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+2025-06-16 10:32:01,325 - __main__ - ERROR - Fatal error: Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+2025-06-16 10:32:01,331 - config - INFO - Configuration loaded successfully
+2025-06-16 10:32:01,331 - config - ERROR - Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+2025-06-16 10:32:01,331 - __main__ - ERROR - Fatal error: Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+2025-06-16 15:21:34,763 - config - INFO - Configuration loaded successfully
+2025-06-16 15:21:34,766 - config - ERROR - Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+2025-06-16 15:21:34,767 - __main__ - ERROR - Fatal error: Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+2025-06-16 15:21:34,771 - __main__ - ERROR - Traceback (most recent call last):
+  File "/home/runner/workspace/main.py", line 338, in main
+    userbot = NexusUserbot()
+              ^^^^^^^^^^^^^^
+  File "/home/runner/workspace/main.py", line 45, in __init__
+    self.config = Config()
+                  ^^^^^^^^
+  File "/home/runner/workspace/config.py", line 31, in __init__
+    self._validate_config()
+  File "/home/runner/workspace/config.py", line 147, in _validate_config
+    raise ValueError(error_msg)
+ValueError: Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+
+2025-06-16 15:21:34,786 - config - INFO - Configuration loaded successfully
+2025-06-16 15:21:34,786 - config - ERROR - Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+2025-06-16 15:21:34,786 - __main__ - ERROR - Fatal error: Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+2025-06-16 15:21:34,788 - __main__ - ERROR - Traceback (most recent call last):
+  File "/home/runner/workspace/main.py", line 338, in main
+    userbot = NexusUserbot()
+              ^^^^^^^^^^^^^^
+  File "/home/runner/workspace/main.py", line 45, in __init__
+    self.config = Config()
+                  ^^^^^^^^
+  File "/home/runner/workspace/config.py", line 31, in __init__
+    self._validate_config()
+  File "/home/runner/workspace/config.py", line 147, in _validate_config
+    raise ValueError(error_msg)
+ValueError: Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+
+2025-06-16 15:54:22,059 - config - INFO - Configuration loaded successfully
+2025-06-16 15:54:22,059 - config - INFO - Configuration loaded successfully
+2025-06-16 15:54:22,059 - config - ERROR - Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+2025-06-16 15:54:22,059 - config - ERROR - Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+2025-06-16 15:54:22,060 - __main__ - ERROR - Fatal error: Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+2025-06-16 15:54:22,060 - __main__ - ERROR - Fatal error: Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+2025-06-16 15:54:22,060 - __main__ - ERROR - Traceback (most recent call last):
+  File "/home/runner/workspace/main.py", line 338, in main
+    userbot = NexusUserbot()
+              ^^^^^^^^^^^^^^
+  File "/home/runner/workspace/main.py", line 45, in __init__
+    self.config = Config()
+                  ^^^^^^^^
+  File "/home/runner/workspace/config.py", line 31, in __init__
+    self._validate_config()
+  File "/home/runner/workspace/config.py", line 147, in _validate_config
+    raise ValueError(error_msg)
+ValueError: Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+
+2025-06-16 15:54:22,061 - __main__ - ERROR - Traceback (most recent call last):
+  File "/home/runner/workspace/main.py", line 338, in main
+    userbot = NexusUserbot()
+              ^^^^^^^^^^^^^^
+  File "/home/runner/workspace/main.py", line 45, in __init__
+    self.config = Config()
+                  ^^^^^^^^
+  File "/home/runner/workspace/config.py", line 31, in __init__
+    self._validate_config()
+  File "/home/runner/workspace/config.py", line 147, in _validate_config
+    raise ValueError(error_msg)
+ValueError: Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+
+2025-06-16 15:54:43,340 - config - INFO - Configuration loaded successfully
+2025-06-16 15:54:43,340 - config - ERROR - Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+2025-06-16 15:54:43,340 - __main__ - ERROR - Fatal error: Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+2025-06-16 15:54:43,341 - __main__ - ERROR - Traceback (most recent call last):
+  File "/home/runner/workspace/main.py", line 338, in main
+    userbot = NexusUserbot()
+              ^^^^^^^^^^^^^^
+  File "/home/runner/workspace/main.py", line 45, in __init__
+    self.config = Config()
+                  ^^^^^^^^
+  File "/home/runner/workspace/config.py", line 31, in __init__
+    self._validate_config()
+  File "/home/runner/workspace/config.py", line 147, in _validate_config
+    raise ValueError(error_msg)
+ValueError: Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+
+2025-06-16 15:54:43,567 - config - INFO - Configuration loaded successfully
+2025-06-16 15:54:43,567 - config - ERROR - Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+2025-06-16 15:54:43,567 - __main__ - ERROR - Fatal error: Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+2025-06-16 15:54:43,568 - __main__ - ERROR - Traceback (most recent call last):
+  File "/home/runner/workspace/main.py", line 338, in main
+    userbot = NexusUserbot()
+              ^^^^^^^^^^^^^^
+  File "/home/runner/workspace/main.py", line 45, in __init__
+    self.config = Config()
+                  ^^^^^^^^
+  File "/home/runner/workspace/config.py", line 31, in __init__
+    self._validate_config()
+  File "/home/runner/workspace/config.py", line 147, in _validate_config
+    raise ValueError(error_msg)
+ValueError: Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+
+2025-06-16 15:59:19,295 - config - INFO - Configuration loaded successfully
+2025-06-16 15:59:19,295 - config - ERROR - Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+2025-06-16 15:59:19,295 - __main__ - ERROR - Fatal error: Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+2025-06-16 15:59:19,296 - __main__ - ERROR - Traceback (most recent call last):
+  File "/home/runner/workspace/main.py", line 420, in main
+    userbot = NexusUserbot()
+              ^^^^^^^^^^^^^^
+  File "/home/runner/workspace/main.py", line 45, in __init__
+    self.config = Config()
+                  ^^^^^^^^
+  File "/home/runner/workspace/config.py", line 31, in __init__
+    self._validate_config()
+  File "/home/runner/workspace/config.py", line 152, in _validate_config
+    raise ValueError(error_msg)
+ValueError: Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+
+2025-06-16 15:59:19,471 - config - INFO - Configuration loaded successfully
+2025-06-16 15:59:19,472 - config - ERROR - Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+2025-06-16 15:59:19,472 - __main__ - ERROR - Fatal error: Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+2025-06-16 15:59:19,475 - __main__ - ERROR - Traceback (most recent call last):
+  File "/home/runner/workspace/main.py", line 420, in main
+    userbot = NexusUserbot()
+              ^^^^^^^^^^^^^^
+  File "/home/runner/workspace/main.py", line 45, in __init__
+    self.config = Config()
+                  ^^^^^^^^
+  File "/home/runner/workspace/config.py", line 31, in __init__
+    self._validate_config()
+  File "/home/runner/workspace/config.py", line 152, in _validate_config
+    raise ValueError(error_msg)
+ValueError: Configuration validation failed:
+- API_ID is required
+- API_HASH is required
+

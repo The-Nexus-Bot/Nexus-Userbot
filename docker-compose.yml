@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  nexus-userbot:
+    build: .
+    container_name: nexus-userbot
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PORT=8080
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./plugins:/app/plugins
+      - ./logs:/app/logs
+    env_file:
+      - .env

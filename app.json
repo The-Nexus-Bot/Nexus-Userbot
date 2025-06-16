@@ -1,0 +1,46 @@
+{
+  "name": "Nexus Telegram Userbot",
+  "description": "A feature-rich Telegram userbot built with Pyrogram",
+  "repository": "https://github.com/YOUR_USERNAME/nexus-userbot",
+  "logo": "https://via.placeholder.com/512x512/6c5ce7/ffffff?text=NU",
+  "keywords": ["telegram", "userbot", "pyrogram", "python", "automation"],
+  "stack": "heroku-22",
+  "env": {
+    "API_ID": {
+      "description": "Get this value from https://my.telegram.org/apps",
+      "value": "",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Get this value from https://my.telegram.org/apps",
+      "value": "",
+      "required": true
+    },
+    "SESSION_STRING": {
+      "description": "Generate using: python3 -c \"from pyrogram import Client; print(Client(':memory:', api_id=API_ID, api_hash='API_HASH').export_session_string())\"",
+      "value": "",
+      "required": true
+    },
+    "COMMAND_PREFIX": {
+      "description": "Command prefix for the userbot (default: .)",
+      "value": ".",
+      "required": false
+    },
+    "BOT_VERSION": {
+      "description": "Bot version",
+      "value": "2.0",
+      "required": false
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env
+pip-log.txt
+pip-delete-this-directory.txt
+.tox
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.env
+
+# Virtual environments
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Session files
+*.session
+*.session-journal
+
+# Logs
+*.log
+logs/
+
+# Documentation
+README.md
+docs/
+
+# Test files
+test/
+tests/
+*_test.py
+
+# Replit specific
+.replit
+replit.nix

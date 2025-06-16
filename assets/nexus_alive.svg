@@ -1,0 +1,63 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="newBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c2c54;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#40407a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#706fd3;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="robotGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff9ff3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f368e0;stop-opacity:1" />
+    </linearGradient>
+    <filter id="neonGlow">
+      <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#newBg)" rx="20"/>
+  
+  <!-- Outer glow border -->
+  <rect x="5" y="5" width="390" height="290" fill="none" stroke="#ff9ff3" stroke-width="3" rx="15" filter="url(#neonGlow)"/>
+  
+  <!-- Robot head -->
+  <g transform="translate(200, 80)">
+    <rect x="-30" y="-25" width="60" height="50" fill="url(#robotGlow)" rx="10" filter="url(#neonGlow)"/>
+    <!-- Robot eyes -->
+    <circle cx="-15" cy="-10" r="6" fill="#00ff41">
+      <animate attributeName="opacity" values="1;0.2;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="15" cy="-10" r="6" fill="#00ff41">
+      <animate attributeName="opacity" values="1;0.2;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Robot antenna -->
+    <line x1="0" y1="-25" x2="0" y2="-35" stroke="#ff9ff3" stroke-width="3"/>
+    <circle cx="0" cy="-35" r="4" fill="#ff3838">
+      <animate attributeName="fill" values="#ff3838;#00ff41;#ff3838" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Main title with cyberpunk style -->
+  <text x="200" y="140" text-anchor="middle" fill="#ff9ff3" font-family="Arial, sans-serif" font-size="30" font-weight="bold" filter="url(#neonGlow)">NEXUS ONLINE</text>
+  
+  <!-- Status line -->
+  <rect x="80" y="160" width="240" height="2" fill="#00ff41">
+    <animate attributeName="width" values="0;240;0" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- System status -->
+  <text x="50" y="190" fill="#00ff41" font-family="Arial, sans-serif" font-size="14" font-weight="bold">[✓] SYSTEM ACTIVE</text>
+  <text x="50" y="210" fill="#00ff41" font-family="Arial, sans-serif" font-size="14" font-weight="bold">[✓] PYROGRAM v2.0</text>
+  <text x="50" y="230" fill="#00ff41" font-family="Arial, sans-serif" font-size="14" font-weight="bold">[✓] ALL PLUGINS LOADED</text>
+  
+  <!-- Cyberpunk elements -->
+  <rect x="320" y="185" width="50" height="30" fill="none" stroke="#ff9ff3" stroke-width="1" opacity="0.7"/>
+  <text x="345" y="205" text-anchor="middle" fill="#ff9ff3" font-family="Arial, sans-serif" font-size="12">CPU</text>
+  
+  <!-- Bottom branding -->
+  <text x="200" y="270" text-anchor="middle" fill="#706fd3" font-family="Arial, sans-serif" font-size="12">NEXUS BOT FRAMEWORK</text>
+</svg>

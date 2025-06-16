@@ -1,0 +1,90 @@
+<svg width="512" height="512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#16213e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f3460;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ee5a6f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ce4257;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ecdc4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#44a08d;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="innerGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="256" cy="256" r="256" fill="url(#bgGradient)"/>
+  
+  <!-- Outer ring -->
+  <circle cx="256" cy="256" r="220" fill="none" stroke="url(#accentGradient)" stroke-width="8" opacity="0.6" filter="url(#glow)">
+    <animateTransform attributeName="transform" type="rotate" values="0 256 256;360 256 256" dur="20s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Inner ring -->
+  <circle cx="256" cy="256" r="180" fill="none" stroke="url(#logoGradient)" stroke-width="4" opacity="0.8">
+    <animateTransform attributeName="transform" type="rotate" values="360 256 256;0 256 256" dur="15s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Central hexagon -->
+  <polygon points="256,150 320,190 320,270 256,310 192,270 192,190" 
+           fill="url(#logoGradient)" 
+           stroke="url(#accentGradient)" 
+           stroke-width="3" 
+           filter="url(#innerGlow)"/>
+  
+  <!-- NEXUS text -->
+  <text x="256" y="240" text-anchor="middle" 
+        font-family="Arial, sans-serif" 
+        font-size="36" 
+        font-weight="bold" 
+        fill="#ffffff" 
+        filter="url(#glow)">NEXUS</text>
+  
+  <!-- Bot indicator -->
+  <text x="256" y="270" text-anchor="middle" 
+        font-family="Arial, sans-serif" 
+        font-size="14" 
+        font-weight="normal" 
+        fill="url(#accentGradient)" 
+        opacity="0.9">BOT</text>
+  
+  <!-- Corner accent elements -->
+  <circle cx="100" cy="100" r="3" fill="url(#accentGradient)" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.3;0.7" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="412" cy="100" r="3" fill="url(#accentGradient)" opacity="0.7">
+    <animate attributeName="opacity" values="0.3;0.7;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="100" cy="412" r="3" fill="url(#accentGradient)" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.3;0.7" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="412" cy="412" r="3" fill="url(#accentGradient)" opacity="0.7">
+    <animate attributeName="opacity" values="0.3;0.7;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Bottom branding -->
+  <text x="256" y="400" text-anchor="middle" 
+        font-family="Arial, sans-serif" 
+        font-size="12" 
+        font-weight="normal" 
+        fill="#ffffff" 
+        opacity="0.6">ASSISTANT</text>
+</svg>
